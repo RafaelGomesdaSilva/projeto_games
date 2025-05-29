@@ -1,10 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #101018;
     min-height: 100vh;
     color: #fff;
+    padding-bottom: 60px;
+    /* igual à altura do footer */
 }
 
 header img {
@@ -30,7 +32,8 @@ section {
     border: 1px solid #23233a;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #ff0080;
     text-shadow: 0 0 8px #00fff0, 0 0 2px #ff0080;
 }
@@ -39,15 +42,109 @@ footer {
     background: #181824;
     color: #00fff0;
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px 18px 10px;
+    height: 60px;
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     box-shadow: 0 0 10px #ff008033;
     border-top: 2px solid #ff0080;
+    z-index: 100;
 }
 
-/* Formulário de contato */
+/* Menu Hamburguer */
+.menu {
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-icon {
+    font-size: 2.5em;
+    color: #ff0080;
+    cursor: pointer;
+    display: block;
+    padding: 16px;
+    user-select: none;
+}
+
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #181824;
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #00fff033;
+    display: none;
+}
+
+.menu-links li {
+    border-bottom: 1px solid #23233a;
+}
+
+.menu-links li:last-child {
+    margin-bottom: 8px;
+}
+
+.menu-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-links a:hover {
+    background: #00fff0;
+    color: #181824;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked+.menu-icon+.menu-links {
+    display: block;
+}
+
+/* Esconde o menu em telas grandes, mostra em telas pequenas */
+@media (min-width: 700px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex !important;
+        position: static;
+        background: none;
+        box-shadow: none;
+        min-width: 0;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .menu-links li {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .menu-links a {
+        padding: 10px 20px;
+        color: #ff0080;
+        background: none;
+    }
+
+    .menu-links a:hover {
+        background: #00fff0;
+        color: #181824;
+    }
+}
+
+/* Contato */
 #contato {
     background: #181824;
     border-radius: 10px;

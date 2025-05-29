@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <title>Meu Site</title>
-
 </head>
 
 <body>
 
-  <header>
-  <img src="img/logo.png" alt="Logo do site">
-</header>
+    <header>
+
+        <img src="img/logo.png" alt="Logo do site">
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#trailer">Trailer Destaque</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#contato">Entre em Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
     <section id="home">
         <h2>Home</h2>
@@ -36,28 +49,33 @@
     </section>
 
     <section id="contato">
-        <form>
+        <h2>Entre em contato</h2>
+        <form action="https://formsubmit.co/rodrigo59130@gmail.com" method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="name" required><br><br>
 
-            <h2>Entre em contato</h2>
-            <form action="https://formsubmit.co/rodrigo59130@gmail.com" method="POST">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="name" required><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-
-                <button type="submit">Enviar</button>
-            </form>
+            <button type="submit">Enviar</button>
         </form>
-
     </section>
 
     <footer>
         <p>&copy; 2025 Meu Site - Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 
