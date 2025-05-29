@@ -1,17 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #101018;
+    min-height: 100vh;
+    color: #fff;
+}
 
-#contato {
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #ff0080 100%);
+header img {
+    display: block;
+    margin: 24px auto 16px auto;
+    width: 158px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ff0080;
+    box-shadow: 0 0 24px #00fff0, 0 0 16px #ff0080 inset;
+    background: #181824;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 10px;
+    background: #181824;
     border-radius: 10px;
-    box-shadow: 0 0 20px #ff0080, 0 0 40px #00fff0 inset;
+    box-shadow: 0 0 10px #00fff033 inset;
+    color: #fff;
+    border: 1px solid #23233a;
+}
+
+h1, h2 {
+    color: #ff0080;
+    text-shadow: 0 0 8px #00fff0, 0 0 2px #ff0080;
+}
+
+footer {
+    background: #181824;
+    color: #00fff0;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 10px #ff008033;
+    border-top: 2px solid #ff0080;
+}
+
+/* Formulário de contato */
+#contato {
+    background: #181824;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00fff033 inset;
     color: #fff;
     padding: 30px;
     margin: 20px 0;
-    position: relative;
+    border: 1px solid #ff0080;
 }
 
 #contato h2 {
     color: #00fff0;
-    text-shadow: 0 0 10px #ff0080, 0 0 20px #00fff0;
+    text-shadow: 0 0 10px #ff0080;
     margin-bottom: 20px;
 }
 
@@ -27,19 +76,20 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    border: none;
+    border: 1px solid #23233a;
     border-radius: 5px;
-    background: #1a1a2e;
+    background: #101018;
     color: #fff;
-    box-shadow: 0 0 10px #00fff0 inset;
+    box-shadow: 0 0 10px #00fff033 inset;
     font-size: 1em;
     outline: none;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, border 0.3s;
 }
 
 #contato input:focus,
 #contato textarea:focus {
     box-shadow: 0 0 20px #ff0080, 0 0 40px #00fff0 inset;
+    border: 1px solid #ff0080;
 }
 
 #contato button {
@@ -53,6 +103,7 @@
     cursor: pointer;
     box-shadow: 0 0 10px #ff0080, 0 0 20px #00fff0;
     transition: background 0.3s, box-shadow 0.3s;
+    letter-spacing: 1px;
 }
 
 #contato button:hover {
