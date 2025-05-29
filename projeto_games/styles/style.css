@@ -1,0 +1,61 @@
+
+#contato {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #ff0080 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff0080, 0 0 40px #00fff0 inset;
+    color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    position: relative;
+}
+
+#contato h2 {
+    color: #00fff0;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #00fff0;
+    margin-bottom: 20px;
+}
+
+#contato label {
+    color: #ff0080;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00fff0;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #1a1a2e;
+    color: #fff;
+    box-shadow: 0 0 10px #00fff0 inset;
+    font-size: 1em;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    box-shadow: 0 0 20px #ff0080, 0 0 40px #00fff0 inset;
+}
+
+#contato button {
+    background: linear-gradient(90deg, #ff0080 0%, #00fff0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0080, 0 0 20px #00fff0;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#contato button:hover {
+    background: linear-gradient(90deg, #00fff0 0%, #ff0080 100%);
+    box-shadow: 0 0 20px #00fff0, 0 0 40px #ff0080;
+}
