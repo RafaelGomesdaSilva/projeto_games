@@ -39,7 +39,7 @@ header img {
     justify-content: center;
     gap: 16px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.2em;
+    font-size: 3.3em;
     color: var(--neon-pink);
     text-shadow: 0 0 8px var(--neon-blue), 0 0 2px var(--neon-pink);
     font-weight: bold;
@@ -47,8 +47,8 @@ header img {
 }
 
 header img {
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 0 16px var(--neon-blue), 0 0 8px var(--neon-pink) inset;
