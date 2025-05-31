@@ -1,4 +1,4 @@
-# 🎮 PixelForge Studios - Landing Page
+# 🎮 PixelForge Studios 
 
 
 
@@ -62,14 +62,11 @@ pixelforge-landing/
 ## ▶️ Como Executar
 
 1. Clone o repositório:
-```bash
+
 git clone https://github.com/seu_usuario/pixelforge-landing.git
 
 
-
 2. Acesse a pasta do projeto:
-
-```bash
 
 Abra o arquivo index.html no seu navegador.
 
@@ -80,4 +77,3 @@ Desenvolvido por Rodrigo Nunes e Rafael Gomes.
 
 
 💡 Este projeto é fictício e desenvolvido para fins educacionais como prática de front-end.
-
