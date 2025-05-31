@@ -63,7 +63,7 @@ pixelforge-landing/
 
 1. Clone o repositório:
 
-git clone https://github.com/seu_usuario/pixelforge-landing.git
+git clone https://github.com/RafaelGomesdaSilva/projeto_games.git
 
 
 2. Acesse a pasta do projeto:
