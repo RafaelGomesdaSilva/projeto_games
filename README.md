@@ -72,7 +72,11 @@ Abra o arquivo index.html no seu navegador.
 
 
 📩 Contato
-Desenvolvido por Rodrigo Nunes e Rafael Gomes.
+
+
+Desenvolvido por **Rodrigo Nunes** e **Rafael Gomes**
+
+
 📧 Emails: ro14208z@gmail.com e rg9402393@gmail.com
 
 
